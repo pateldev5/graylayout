@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>hover img</title>
+    <style>
+        #container img{
+            position: absolute;
+            height: 400px;
+            width: 700px;
+            transition: 5s;
+        }
+        #container img:hover{
+            opacity: 0;
+        }
+        #overlay{
+            background-color: rgb(211, 30, 157);
+            height: 400px;
+            width: 700px;
+        }
+        #text{
+            font-size: xx-large;
+            font-weight: 900;
+            color: black;
+            text-align: center;
+            padding-top: 150px;
+        }
+        #container img:hover #overlay{
+            opacity: 1;
+        }
+
+        #container1 img{
+            position: absolute;
+            height: 400px;
+            width: 700px;
+            transition: 5s;
+        }
+        #container1 img:hover{
+            opacity: 0.5;
+        }
+        #overlay1{
+            height: 400px;
+            width: 700px;
+        }
+        #btn{
+            text-align: center;
+            padding-top: 150px;
+        }
+        button{
+            padding: 20px 40px;
+            font-size: 30px;
+            background-color: green;
+            color: rgb(22, 30, 36);
+            font-weight: 200;
+            border: 1px solid rgb(101, 22, 204);
+            border-radius: 10px;
+        }
+        #container1 img:hover #btn{
+            opacity: 5;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="C:\Users\hello\Desktop\download.jpg" alt="heart">
+        <div id="overlay">
+            <div id="text">heart</div>
+        </div>
+    </div><br>
+    <div id="container1">
+        <img src="C:\Users\hello\Desktop\dev.png.png" alt="apple">
+        <div id="overlay1">
+            <div id="btn"><button>apple</button></div>
+        </div>
+    </div>
+</body>
+</html>
